@@ -1,0 +1,29 @@
+.header {
+  app-section-label {
+    display: inline-block;
+    padding-bottom: 15px;
+  }
+
+  &-content {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    &__info {
+      display: flex;
+      align-items: flex-end;
+      gap: 85px;
+
+      &-title {
+        display: inline-block;
+        font-family: Inter, sans-serif;
+        font-size: 3.6rem;
+        font-weight: 600;
+        line-height: 3.6rem;
+        letter-spacing: 1.44px;
+
+        color: var(--black-text);
+      }
+    }
+  }
+}

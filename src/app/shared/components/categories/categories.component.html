@@ -1,0 +1,21 @@
+<div class="categories">
+  <div class="categories-content">
+    <ul class="categories-content__list">
+      @for (category of categories; track category.id) {
+        <li class="categories-content__list-item category">
+          <div class="category-content">
+            <div class="category-content__name">
+              <span class="category-content__name-text">{{ category.name }}</span>
+            </div>
+
+            @if (category.menu) {
+              <div class="category-content__icon">
+                <span class="icon icon-dropdown-arrow"></span>
+              </div>
+            }
+          </div>
+        </li>
+      }
+    </ul>
+  </div>
+</div>

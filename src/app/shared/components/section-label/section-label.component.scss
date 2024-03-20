@@ -1,0 +1,25 @@
+.label {
+  &-content {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+
+    &__square {
+      width: 20px;
+      height: 40px;
+
+      border-radius: 4px;
+      background-color: #DB4444;
+    }
+
+    &__title {
+      font-size: 1.6rem;
+      font-weight: 600;
+      line-height: 2rem;
+
+      color: #DB4444;
+    }
+  }
+}
+

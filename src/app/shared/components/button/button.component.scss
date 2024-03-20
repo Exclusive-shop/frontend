@@ -1,0 +1,42 @@
+.button {
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 4px;
+
+  // SIZE
+  &.small {
+    padding: 6px 10px;
+  }
+
+  &.medium {
+    padding: 10px 48px;
+
+    .button-text {
+      font-size: 1.6rem;
+      font-weight: 500;
+      line-height: 2.4rem;
+    }
+  }
+
+  &.large {
+    padding: 16px 48px;
+  }
+
+  // TYPE
+  &.red {
+    color: #fff;
+    background-color: #DB4444;
+  }
+
+  &.green {
+    color: #fff;
+    background-color: #0F6;
+  }
+
+  &.transparent {
+  }
+
+  &-text {
+    background-color: transparent;
+  }
+}

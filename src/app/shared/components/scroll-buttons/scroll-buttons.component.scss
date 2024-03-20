@@ -1,0 +1,46 @@
+.arrows {
+  &-wrapper {
+  }
+
+  &-content {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    &__left {
+      rotate: 180deg;
+    }
+
+    &__left,
+    &__right {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      cursor: pointer;
+
+      padding: 11px;
+      border-radius: 100%;
+
+      background-color: #F5F5F5;
+
+      .icon {
+        font-size: 2.4rem;
+        line-height: 2.4rem;
+      }
+
+      &.disabled {
+        opacity: 0.7;
+      }
+    }
+  }
+}
+
+.icon {
+}
+
+.icon-arrow-regular {
+}
+
+.arrows-content__right {
+}

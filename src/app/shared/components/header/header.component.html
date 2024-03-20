@@ -1,0 +1,35 @@
+<header class="header">
+  <div class="header-wrapper">
+    <div class="header-content">
+      <div class="header-content__logo">
+        <h1 class="header-content__logo-text">Exclusive</h1>
+      </div>
+      <nav class="header-content__nav">
+        <ul class="header-content__nav-list menu">
+          @for (menuItem of menu; track menuItem.id) {
+            <li class="menu-item">
+              <a [routerLink]="menuItem.link" [routerLinkActive]="'active'" class="menu-item__link">
+                {{ menuItem.name }}
+              </a>
+            </li>
+          }
+        </ul>
+      </nav>
+      <div class="header-content__user">
+        <div class="header-content__user-search">
+          <app-search></app-search>
+        </div>
+        <div class="header-content__user-wishes wishes">
+          <div class="wishes-content">
+            <div class="wishes-content__heart">
+              <span class="icon icon-heart"></span>
+            </div>
+            <div class="wishes-content__cart">
+              <span class="icon icon-cart"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

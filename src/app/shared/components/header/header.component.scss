@@ -1,0 +1,98 @@
+.header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+
+  &-wrapper {
+    max-width: 1210px;
+    width: 100%;
+
+    padding: 16px 20px;
+    margin: 0 auto;
+  }
+
+  &-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__logo {
+      &-text {
+        font-size: 2.4rem;
+        font-weight: 700;
+        font-family: Inter, sans-serif;
+        line-height: 2.4rem;
+        letter-spacing: 0.72px;
+
+        color: var(--black-text);
+      }
+    }
+
+    &__nav {
+      &-list {
+      }
+    }
+
+    &__user {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+
+      &-search {
+      }
+
+      &-wishes {
+      }
+    }
+  }
+}
+
+.wishes {
+  &-content {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    &__heart,
+    &__cart {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 32px;
+      height: 32px;
+    }
+
+    &__heart {
+      .icon {
+        font-size: 2rem;
+      }
+    }
+
+    &__cart {
+      .icon {
+        font-size: 2.4rem;
+      }
+    }
+  }
+}
+
+
+.menu {
+  display: flex;
+  gap: 24px;
+
+  &-item {
+    &__link {
+      display: inline-block;
+      color: var(--black-text);
+      font-family: Poppins, sans-serif;
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+      text-decoration: none;
+      padding: 5px 12px;
+
+      &.active {
+        border-bottom: 1px solid #000000;
+      }
+    }
+  }
+}

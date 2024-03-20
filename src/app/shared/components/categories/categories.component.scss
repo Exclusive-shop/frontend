@@ -1,0 +1,36 @@
+.categories {
+  &-content {
+    width: 217px;
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+  }
+}
+
+.category {
+  &-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    cursor: pointer;
+    padding: 6px 0;
+
+    &__name {
+      &-text {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        color: var(--black-text);
+      }
+    }
+
+    &__icon {
+      .icon-dropdown-arrow {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}

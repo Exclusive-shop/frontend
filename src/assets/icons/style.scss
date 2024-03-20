@@ -1,0 +1,140 @@
+@import "variables";
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?l4bfx4');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?l4bfx4#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?l4bfx4') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?l4bfx4') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?l4bfx4##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-star {
+  &:before {
+    content: $icon-star; 
+  }
+}
+.icon-arrow-bold {
+  &:before {
+    content: $icon-arrow-bold; 
+  }
+}
+.icon-arrow-regular {
+  &:before {
+    content: $icon-arrow-regular; 
+  }
+}
+.icon-camera-category {
+  &:before {
+    content: $icon-camera-category; 
+  }
+}
+.icon-cart {
+  &:before {
+    content: $icon-cart; 
+  }
+}
+.icon-computer-category {
+  &:before {
+    content: $icon-computer-category; 
+  }
+}
+.icon-customer-service {
+  &:before {
+    content: $icon-customer-service; 
+  }
+}
+.icon-delivery {
+  &:before {
+    content: $icon-delivery; 
+  }
+}
+.icon-dropdown-arrow {
+  &:before {
+    content: $icon-dropdown-arrow; 
+  }
+}
+.icon-eye {
+  &:before {
+    content: $icon-eye; 
+  }
+}
+.icon-facebook {
+  &:before {
+    content: $icon-facebook; 
+  }
+}
+.icon-gamepad-category {
+  &:before {
+    content: $icon-gamepad-category; 
+  }
+}
+.icon-headphone-category {
+  &:before {
+    content: $icon-headphone-category; 
+  }
+}
+.icon-heart {
+  &:before {
+    content: $icon-heart; 
+  }
+}
+.icon-instagram {
+  &:before {
+    content: $icon-instagram; 
+  }
+}
+.icon-linkedin {
+  &:before {
+    content: $icon-linkedin; 
+  }
+}
+.icon-phone-category {
+  &:before {
+    content: $icon-phone-category; 
+  }
+}
+.icon-search {
+  &:before {
+    content: $icon-search; 
+  }
+}
+.icon-send {
+  &:before {
+    content: $icon-send; 
+  }
+}
+.icon-shield-tick {
+  &:before {
+    content: $icon-shield-tick; 
+  }
+}
+.icon-smartwatch-category {
+  &:before {
+    content: $icon-smartwatch-category; 
+  }
+}
+.icon-twitter {
+  &:before {
+    content: $icon-twitter; 
+  }
+}
+

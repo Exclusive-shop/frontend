@@ -1,0 +1,17 @@
+<div class="promotional">
+  <div class="promotional-content">
+    <div class="promotional-content__info">
+      <span class="promotional-content__info-name">{{ name }}</span>
+      <h3 class="promotional-content__info-title">{{ title }}</h3>
+      <app-countdown-timer
+        [endDate]="endDate"
+        [type]="COUNTDOWN_TIMER_TYPE.CIRCLES"
+      ></app-countdown-timer>
+      <app-button (click)="onBuyClick()" [buttonData]="buyButtonData">Buy Now!</app-button>
+    </div>
+    <div class="promotional-content__image">
+      <img [src]="imageUrl" alt="promotional" class="promotional-content__image-img">
+      <div class="promotional-content__image-blur"></div>
+    </div>
+  </div>
+</div>

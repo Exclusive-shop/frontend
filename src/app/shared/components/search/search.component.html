@@ -1,0 +1,14 @@
+<div class="search">
+  <div class="search-content">
+    <input
+      [ngModel]="search"
+      (ngModelChange)="onInput($event)"
+      type="text"
+      class="search-content__input"
+      placeholder="What are you looking for?"
+    >
+    <div class="search-content__icon">
+      <span class="icon icon-search"></span>
+    </div>
+  </div>
+</div>

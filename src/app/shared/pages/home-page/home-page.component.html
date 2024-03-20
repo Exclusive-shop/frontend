@@ -1,0 +1,26 @@
+<main class="main">
+  <div class="main-wrapper">
+    <div class="main-content">
+      <div class="main-content__hero hero">
+        <div class="hero-content">
+          <div class="hero-content__categories">
+            <app-categories [categories]="categories" (onSelect)="onCategorySelect($event)"></app-categories>
+          </div>
+          <div class="hero-content__banner"></div>
+        </div>
+      </div>
+      <div class="main-content__flash flash">
+        <app-promotional-product-banner
+          name="Categories"
+          title="Enhance Your Music Experience">
+        </app-promotional-product-banner>
+
+        <app-carousel-section
+          [sectionName]="'Today’s'"
+          [sectionTitle]="'Flash Sales'"
+        >
+        </app-carousel-section>
+      </div>
+    </div>
+  </div>
+</main>

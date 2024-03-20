@@ -1,1 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:wght@400;500;600&display=swap');
+@import "./assets/icons/style.css";
+
+html, body {
+  font-family: Poppins, sans-serif;
+  font-size: 10px;
+  height: 100%;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+button {
+  background: none;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --black-text: #000000;
+  --search-background: #F5F5F5;
+}
+
+
+/** Slick-carousel */
+.slick-slide {
+  & > div {
+    padding-bottom: 60px !important;
+  }
+}

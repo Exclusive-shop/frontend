@@ -1,0 +1,53 @@
+<div class="product">
+  <div class="product-top">
+    <ul class="product-top__labels labels">
+      @if (discount > 0) {
+        <li class="labels-item label discount">
+          <div class="label-value">-{{ discount }}%</div>
+        </li>
+      }
+
+      @if (isNew) {
+        <li class="labels-item label new">
+          <span class="label-value">NEW</span>
+        </li>
+      }
+    </ul>
+
+    <div class="product-top__buttons buttons">
+      <span (click)="onHeartClick()" class="buttons-item button heart">
+        <span class="button-icon icon icon-heart"></span>
+      </span>
+    </div>
+
+    <div class="product-top__background">
+      <img [src]="productImage" alt="product-image" class="product-top__background-image">
+      <span class="product-top__background-cart">
+        <span class="product-top__background-cart-text">Add to cart</span>
+      </span>
+    </div>
+  </div>
+  <div class="product-info">
+    <div class="product-info__name">
+      <span class="product-info__name-text">{{ 'HAVIT HV-G92 Gamepad' }}</span>
+    </div>
+
+    <div class="product-info__prices">
+      <span class="product-info__prices-current">{{ price | currency:'USD':'$':'.0-2' }}</span>
+      @if (oldPrice) {
+        <span class="product-info__prices-old">{{ oldPrice | currency:'USD':'$':'.0-2' }}</span>
+      }
+    </div>
+
+    <div class="product-info__rating">
+      <div class="product-info__rating-stars stars">
+        @for (star of _countStars; let index = $index; track index) {
+          <span [ngClass]="{ active: star }" class="star icon icon-star"></span>
+        }
+      </div>
+      <div class="product-info__rating-reviews">
+        <span class="product-info__rating-reviews-text">({{ countReviews }})</span>
+      </div>
+    </div>
+  </div>
+</div>

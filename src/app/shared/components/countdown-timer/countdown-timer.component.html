@@ -1,0 +1,44 @@
+@if (secondsLeft > 0) {
+  <div class="timer">
+    <div class="timer-wrapper">
+      <div class="timer-content" [ngClass]="[type]">
+        <div class="timer-content__days time">
+          <div class="time-content">
+            <span class="time-content__name">Days</span>
+            <span class="time-content__value">{{ days }}</span>
+          </div>
+        </div>
+        <div class="timer-content__dots dots">
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        <div class="timer-content__hours time">
+          <div class="time-content">
+            <span class="time-content__name">Hours</span>
+            <span class="time-content__value">{{ hours }}</span>
+          </div>
+        </div>
+        <div class="timer-content__dots dots">
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        <div class="timer-content__minutes time">
+          <div class="time-content">
+            <span class="time-content__name">Minutes</span>
+            <span class="time-content__value">{{ minutes }}</span>
+          </div>
+        </div>
+        <div class="timer-content__dots dots">
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+        <div class="timer-content__seconds time">
+          <div class="time-content">
+            <span class="time-content__name">Seconds</span>
+            <span class="time-content__value">{{ seconds }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+}

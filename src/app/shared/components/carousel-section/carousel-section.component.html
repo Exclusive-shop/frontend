@@ -1,0 +1,32 @@
+<div class="section">
+  <div class="section-content">
+    <div class="section-content__header">
+      <app-section-header
+        [sectionName]="sectionName"
+        [sectionTitle]="sectionTitle"
+      >
+        <app-scroll-buttons
+          (left)="slickModal.slickPrev()"
+          (right)="slickModal.slickNext()"
+        ></app-scroll-buttons>
+      </app-section-header>
+    </div>
+
+    <ngx-slick-carousel #slickModal="slick-carousel" [config]="carouselConfig">
+      <app-product-card ngxSlickItem [countActiveStars]="3"></app-product-card>
+      <app-product-card ngxSlickItem [countActiveStars]="3"></app-product-card>
+      <app-product-card ngxSlickItem [countActiveStars]="3"></app-product-card>
+      <app-product-card ngxSlickItem [countActiveStars]="3"></app-product-card>
+      <app-product-card ngxSlickItem [countActiveStars]="3"></app-product-card>
+      <app-product-card ngxSlickItem [countActiveStars]="3"></app-product-card>
+      <app-product-card ngxSlickItem [countActiveStars]="3"></app-product-card>
+      <app-product-card ngxSlickItem [countActiveStars]="3"></app-product-card>
+      <app-product-card ngxSlickItem [countActiveStars]="3"></app-product-card>
+      <app-product-card ngxSlickItem [countActiveStars]="3"></app-product-card>
+      <app-product-card ngxSlickItem [countActiveStars]="3"></app-product-card>
+      <app-product-card ngxSlickItem [countActiveStars]="3"></app-product-card>
+    </ngx-slick-carousel>
+  </div>
+
+  <app-button>View All Products</app-button>
+</div>

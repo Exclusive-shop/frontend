@@ -1,0 +1,26 @@
+.main {
+  &-wrapper {
+    max-width: 1210px;
+    width: 100%;
+
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+}
+
+.hero {
+  padding-bottom: 140px;
+  
+  &-content {
+    display: flex;
+
+    &__categories {
+      padding: 34px 16px 0 0;
+      border-right: 1px solid rgba(0, 0, 0, 0.3)
+    }
+  }
+}
+
+app-section-header {
+  padding-bottom: 40px;
+}

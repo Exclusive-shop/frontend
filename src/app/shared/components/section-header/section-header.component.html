@@ -1,0 +1,13 @@
+<div class="header">
+  <app-section-label [title]="sectionName"></app-section-label>
+  <div class="header-content">
+    <div class="header-content__info">
+      <h2 class="header-content__info-title">{{ sectionTitle }}</h2>
+      @if (endDate) {
+        <app-countdown-timer [endDate]="endDate"></app-countdown-timer>
+      }
+    </div>
+
+    <ng-content></ng-content>
+  </div>
+</div>

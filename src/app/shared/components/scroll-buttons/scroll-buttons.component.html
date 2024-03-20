@@ -1,0 +1,12 @@
+<div class="arrows">
+  <div class="arrows-wrapper">
+    <div class="arrows-content">
+      <div (click)="onLeftClick()" [ngClass]="{disabled: !isLeftEnabled}" class="arrows-content__left">
+        <span class="icon icon-arrow-regular"></span>
+      </div>
+      <div (click)="onRightClick()" [ngClass]="{disabled: !isRightEnabled}" class="arrows-content__right">
+        <span class="icon icon-arrow-regular"></span>
+      </div>
+    </div>
+  </div>
+</div>
